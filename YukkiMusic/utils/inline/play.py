@@ -417,4 +417,3 @@ def panel_markup_3(_, videoid, chat_id):
         ],
     ]
     return buttons
-..
