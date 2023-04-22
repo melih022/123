@@ -33,11 +33,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=_["PL_B_14"],
                 url=f"https://t.me/bisohbetbot",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
+            )
         ],
         [
             InlineKeyboardButton(
@@ -85,11 +81,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text=_["PL_B_14"],
                 url=f"https://t.me/bisohbetbot",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
+            )
         ],
     ]
     return buttons
@@ -115,11 +107,7 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_14"],
                 url=f"https://t.me/bisohbetbot",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
+            )
         ],
         [
             InlineKeyboardButton(
@@ -141,6 +129,12 @@ def stream_markup(_, videoid, chat_id):
 
 def telegram_markup(_, chat_id):
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=_["PL_B_3"],
+                callback_data=f"PanelMarkup None|{chat_id}",
+            ),
+         ],
          [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
@@ -157,19 +151,9 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_14"],
                 url=f"https://t.me/bisohbetbot",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
+            )
         ],
-         [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-         ],
-         [
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
@@ -229,6 +213,12 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
+                text=_["P_B_3"],
+                callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["PL_B_12"],
                 url=f"https://t.me/VideoMuzikKayit",
             )
@@ -243,19 +233,9 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
             InlineKeyboardButton(
                 text=_["PL_B_14"],
                 url=f"https://t.me/bisohbetbot",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
+            )
         ],
         [
-            InlineKeyboardButton(
-                text=_["P_B_3"],
-                callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
-            ),
-         ],
-         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
