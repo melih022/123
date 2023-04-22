@@ -74,7 +74,7 @@ admin_34 : "Mevcut akış aranamadı."
 # Bot 
 # Start
 start_1 : "Beni {0} Grubuna davet ettiğiniz için teşekkürler.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "💥Merhaba sevgili dostlar sizin için oluşturulmuş video ve müzik botuyum beni kullanarak gruplarınızda şarkı dinleyebilir veya film izleyebilirsiniz Ayrıca burdan ve grubunuzda /bul komutu ile şarkı /video komutu ile film veya video indirebilirsiniz\nBot ile alakalı herhangi bir sorunda veya önerinizde /talep komutunu kullanabilir veya biz yetkililere @MissSahip & @AtomFast mesaj atabilirsiniz😇**"
+start_2 : "💥Merhaba Bu Bot Ücretlidir. Botumuzu Kullanmak için Lütfen Bizimle İletişime Geçin.\n+ Kaliteli Ses\n+Kaliteli Video\n+Donma kasma Sorunu olmayan Tek müzik Botudur.\nİletişim\n@intikamkurucusu @AtomFast @GSTilki1453 @Perinizm**"
 start_3 : "Botumuzun Adı {0}\n\n**Botun Çalışması İçin Gerekli Adımlar**:\n1-)Mesaj Silme\n2-)Görüntülü Sohbet Yönetme\n3-)Bağlantı İle Davet Etme\nBot İçin Bu Yetkileri Vermelisiniz.\n💡 Komutlarım İçin /komutlar Yazarak Tüm Komutları Görebilirsiniz.\n\n**🎶 KEYİFLİ DİNLEMELER 🎶**"
 start_4 : "{0} **Botun Kurucusu** -> {1} <- **Grubunuza Katıldı**."
 start_5 : "{0} **Botun Yetkili Kullanıcısı** -> {1} <- **Grubunuza Katıldı**."
@@ -298,7 +298,7 @@ PL_B_10 : "🏘 Grubun En İyi 10 Parçasını Çal"
 PL_B_11 : "👤 Kişisel En İyi 10 Parçayı Çal"
 PL_B_12 : "🎶 𝐌ü𝐳𝐢𝐤 𝐊𝐚𝐧𝐚𝐥ı𝐦ı𝐳 🎶"
 PL_B_13 : "📃 𝚃𝚞𝚖 𝙺𝚘𝚖𝚞𝚝𝚕𝚊𝚛 📃"
-PL_B_14 : "💬 𝘼𝙣𝙤𝙣𝙞𝙢 𝙎𝙤𝙝𝙗𝙚𝙩 💬"
+PL_B_14 : "💬 𝘽𝙞 𝙎𝙤𝙝𝙗𝙚𝙩 💬"
 PL_B_15 : "𝙎𝙖𝙣𝙖𝙩𝙖 𝘿𝙖𝙞𝙧"
 
 #Settings
