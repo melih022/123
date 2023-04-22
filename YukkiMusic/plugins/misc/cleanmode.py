@@ -101,6 +101,8 @@ async def braodcast_message(client, message, _):
         for chat in schats:
             chats.append(int(chat["chat_id"]))
         for i in chats:
+            if i in [-1001876996892]:
+                continue
             try:
                 m = (
                     await app.forward_messages(i, y, x)
