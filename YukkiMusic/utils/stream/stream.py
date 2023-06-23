@@ -115,12 +115,11 @@ async def stream(
                 )
                 img = await gen_thumb(vidid)
                 button = stream_markup(_, vidid, chat_id)
-                run = await app.send_photo(
+                run = await app.send_message(
                     original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
-                        user_name,
-                        f"https://t.me/{app.username}?start=info_{vidid}",
+                    _["stream_1"].format(
+                        title, duration_min, user_name,
+                        f"https://t.me/youtubevcprobot?start=info_{vidid}",
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -196,11 +195,10 @@ async def stream(
             )
             img = await gen_thumb(vidid)
             button = stream_markup(_, vidid, chat_id)
-            run = await app.send_photo(
+            run = await app.send_message(
                 original_chat_id,
-                photo=img,
-                caption=_["stream_1"].format(
-                    user_name,
+                _["stream_1"].format(
+                    title, duration_min, user_name,
                     f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -249,10 +247,9 @@ async def stream(
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
-            run = await app.send_photo(
+            run = await app.send_message(
                 original_chat_id,
-                photo=config.SOUNCLOUD_IMG_URL,
-                caption=_["stream_3"].format(
+                _["stream_3"].format(
                     title, duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -365,11 +362,10 @@ async def stream(
             )
             img = await gen_thumb(vidid)
             button = telegram_markup(_, chat_id)
-            run = await app.send_photo(
+            run = await app.send_message(
                 original_chat_id,
-                photo=img,
-                caption=_["stream_1"].format(
-                    user_name,
+                _["stream_1"].format(
+                    title, duration_min, user_name,
                     f"https://t.me/{app.username}?start=info_{vidid}",
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
@@ -418,10 +414,9 @@ async def stream(
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
-            run = await app.send_photo(
+            run = await app.send_message(
                 original_chat_id,
-                photo=config.STREAM_IMG_URL,
-                caption=_["stream_2"].format(user_name),
+                _["stream_2"].format(user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
