@@ -74,7 +74,9 @@ admin_34 : "Mevcut akış aranamadı."
 # Bot 
 # Start
 start_1 : "Beni {0} Grubuna davet ettiğiniz için teşekkürler.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "💥Merhaba Bu Bot Ücretlidir. Botumuzu Kullanmak için Lütfen Bizimle İletişime Geçin.\n+ Kaliteli Ses\n+Kaliteli Video\n+Donma kasma Sorunu olmayan Tek müzik Botudur.\nİletişim\n@intikamkurucusu @AtomFast @GSTilki1453 @Perinizm**"
+start_2 : "**Merhaba\nBen Video ve Müzik Botuyum.\n\nDaha Fazla Bilgi Almak İçin - Google Bilgi Butonuna Tıklayabilir, /yardım Yazarak Sahibimle İletişim Kurabilirsin.**"
+
+
 start_3 : "Botumuzun Adı {0}\n\n**Botun Çalışması İçin Gerekli Adımlar**:\n1-)Mesaj Silme\n2-)Görüntülü Sohbet Yönetme\n3-)Bağlantı İle Davet Etme\nBot İçin Bu Yetkileri Vermelisiniz.\n💡 Komutlarım İçin /komutlar Yazarak Tüm Komutları Görebilirsiniz.\n\n**🎶 KEYİFLİ DİNLEMELER 🎶**"
 start_4 : "{0} **Botun Kurucusu** -> {1} <- **Grubunuza Katıldı**."
 start_5 : "{0} **Botun Yetkili Kullanıcısı** -> {1} <- **Grubunuza Katıldı**."
@@ -150,7 +152,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/kanalmodu bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "💥"
+play_1 : "🎶"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔄 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi!"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirme Kullanıcıları bu grupta müzik çalabilir.\n\nModu /oynatmodu aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
@@ -248,7 +250,7 @@ stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛�
 
 #General Buttons
 CLOSE_BUTTON  : "🗑 Kapat"
-CLOSEMENU_BUTTON  : "🗑 Menüyü Kapat"
+CLOSEMENU_BUTTON  : "✖️ Menüyü Kapat ✖️"
 BACK_BUTTON : "⬅ Geri"
 UNBAN_BUTTON : "🗑 Asistanın yasağını kaldır"
 
@@ -259,10 +261,10 @@ L_B_1 : "🚀 Şarkı Sözlerini Şimdi Kontrol Et"
 S_B_1 : "📜 𝙆𝙤𝙢𝙪𝙩𝙡𝙖𝙧 📜"
 S_B_2 : "🔧 𝐀𝐲𝐚𝐫𝐥𝐚𝐫"
 S_B_3 : "📨 Destek Grubumuz"
-S_B_4 : "📨 𝐃𝐞𝐬𝐭𝐞𝐤 𝐊𝐚𝐧𝐚𝐥ı𝐦ı𝐳"
-S_B_5 : "🎶 𝘽𝙚𝙣𝙞 𝙂𝙧𝙪𝙗𝙪𝙣𝙖 𝙀𝙠𝙡𝙚 🎶"
+S_B_4 : "𝐆𝐨𝐨𝐠𝐥𝐞✦𝐁𝐢𝐥𝐠𝐢"
+S_B_5 : "💬 𝘽𝙚𝙣𝙞 𝙂𝙧𝙪𝙗𝙪𝙣𝙖 𝙀𝙠𝙡𝙚 💬"
 S_B_6 : "💡 Git Repo"
-S_B_7 : "🔥 𝐒𝐀𝐇İ𝐏 🔥"
+S_B_7 : "👨‍💻 𝐒𝐀𝐇İ𝐏 👨‍💻"
 S_B_8 : "📜 𝙆𝙤𝙢𝙪𝙩𝙡𝙖𝙧 📜"
 
 #Help 
@@ -286,7 +288,7 @@ P_B_4 : "🎵 Listem Oynat"
 
 #Playlist
 PL_B_1 : "📜 Listemi Oynat 📜"
-PL_B_2 : "✚ Listeme Ekle"
+PL_B_2 : "✚ Listeme Ekle ✚"
 PL_B_3 : "𝐁𝐮𝐭𝐨𝐧 𝐊𝐨𝐦𝐮𝐭"
 PL_B_4 : "📡 Oynatma Modu"
 PL_B_5 : "🔄 Tüm listeyi temizle"
@@ -296,10 +298,10 @@ PL_B_8 : "🔢 Oynatma Top 10"
 PL_B_9 : "🤖 Global En İyi 10 Parçasını Çal"
 PL_B_10 : "🏘 Grubun En İyi 10 Parçasını Çal"
 PL_B_11 : "👤 Kişisel En İyi 10 Parçayı Çal"
-PL_B_12 : "🎶 𝐌ü𝐳𝐢𝐤 𝐊𝐚𝐧𝐚𝐥ı𝐦ı𝐳 🎶"
+PL_B_12 : "🎶𝙂𝙤𝙤𝙜𝙡𝙚 𝙈𝙪𝙨𝙞𝙘🎧"
 PL_B_13 : "📃 𝚃𝚞𝚖 𝙺𝚘𝚖𝚞𝚝𝚕𝚊𝚛 📃"
-PL_B_14 : "💬 𝘽𝙞 𝙎𝙤𝙝𝙗𝙚𝙩 💬"
-PL_B_15 : "𝙎𝙖𝙣𝙖𝙩𝙖 𝘿𝙖𝙞𝙧"
+PL_B_14 : "𝐆𝐨𝐨𝐠𝐥𝐞✦𝐁𝐢𝐥𝐠𝐢"
+PL_B_15 : "𝙎𝙖𝙣𝙖𝙩𝙖•𝘿𝙖𝙞𝙧💫"
 
 #Settings
 ST_B_1 : "🔊 Ses Kalitesi"
