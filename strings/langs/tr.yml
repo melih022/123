@@ -242,10 +242,10 @@ queue_5 : "Sırada sadece bir parça var, Lütfen kontrol listesine biraz daha e
 
 
 # All Streaming Lines
-stream_1 : "🎸 **Yayın Başladı**\n\n🔘Başlık:** {0}\n**⏱Süre:** {1}\n👉**Talep Eden:** {2}"
-stream_2 : "🎸 **URL ile Yayına Başladı **\n\n👉**Talep Eden:** {0}"
-stream_3 : "📡 **Yayın Başladı**\n\n**🔘Başlık:** {0}\n⌛️**Süre**: {1}\n👤**İsteyen:** {2}"
-stream_4 : "📡 **Akış Başlatıldı**\n\n**🔘Başlık:** [{0}]({1})\n⌛️**Süre**: {2}\n👤**İsteyen:** {3}"
+stream_1 : "📡 **Started Streaming** 💡\n\n👤**Requested By:** {0}\n🔦**Information: **[Here]({1})"
+stream_2 : "📡 **Started Streaming via URL ** 💡\n\n👤**Requested By:** {0}"
+stream_3 : "📡 **Started Streaming** 💡\n\n**🏷Title:** {0}\n⌛️**Duration**: {1}\n👤**Requested By:** {2}"
+stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️**Duration**: {2}\n👤**Requested By:** {3}"
 # Inline Buttons
 
 #General Buttons
