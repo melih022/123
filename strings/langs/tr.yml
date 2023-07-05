@@ -152,7 +152,7 @@ cplay_5 : "Yalnızca Kanallar Desteklenir."
 cplay_6 : "Kanalı bu gruba bağlamak için[{0}] kanalın **Sahibi** olmanız gerekir.\n**Kanal Sahibi:** @{1}\n\nAlternatif olarak grubunuzu o kanala bağlayabilirsiniz. ve ardından `/kanalmodu bağlantılı ile bağlanmayı deneyin`"
 
 #Play
-play_1 : "🎶"
+play_1 : "🔍"
 play_2 : "**🏷Kanal Oynatma Modu**\n🔄 Sorgu İşleniyor... Lütfen Bekleyin!\n\n**Bağlı Kanal:** {0}"
 play_3 : "Sorgu İşlenemedi!"
 play_4 : "🖇 **Yalnızca Yöneticiler Oynatır**\nYalnızca Yöneticiler ve Yetkilendirme Kullanıcıları bu grupta müzik çalabilir.\n\nModu /oynatmodu aracılığıyla değiştirin ve zaten yöneticiyseniz, /admincache aracılığıyla admincache'i yeniden yükleyin"
