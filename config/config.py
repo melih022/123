@@ -68,7 +68,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "GoogleMuzikbot")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5009212526 5995960114").split())
+    map(int, getenv("OWNER_ID", "5995960114 5009212526").split())
 
 )  # Input type must be interger
 
@@ -108,7 +108,7 @@ SUPPORT_GROUP = getenv(
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Time after which you're assistant account will leave chats automatically.
 
@@ -195,9 +195,8 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
 
-STRING1 = getenv("STRING_SESSION1", "BACetYzvsVnuu_eiHHD3DWfTMuEgcJpehQkWGE317mN-Mbt4XlAJ300wv6NIWihceXELg7qljbf8LfMJ2vvfiXnNIOgzhXvYuKRIiT8ljHxvoUDiqnbOrvk25-0bu5lv94VkGAFb5qYmq82N2_KiN2Fgjr4ToEzpT8qR0bMH8JO6bD_s5DU5tExhVJ2rOEG3vkUFwBpr2tO94jbVuG_aSsaYnZ_am5xn0kL_f0-KhLKkDq7lWejDc7q0OMGHBpjFXymOa-R_YcNHPG28AYjh-3hDhTb6ypPJ4BpGHy1moFKAUvkq5nstguZQp0Wu61lw8KNatGrYVsm4Ki0tZe6H0E9YAAAAAU7cV7YA")
-
-STRING2 = getenv("STRING_SESSION2", None)
+STRING1 = getenv("STRING_SESSION1", "BAC1Jw3eVvOq6BCbbzAd7CBDGaOB4PtORy-gZp9QRshJm0iXfZ2XR4ZTFeeXdt12bd8nbRPu0qxxXleKCTIfSgkakKQSmZRRsJOf3-vJidwstIiLljVDvoUEa54VMs0_1dd16kaB64ImA3WQObdZdDsx_BEAoOhxItS7iudYdMOh-L5RJKHk4bo_dFte4w4dR61l12C1lMsctvCH05M-ME-ytY_gzSpuSPoM811S0sX8MFoHwZC2MfXV6QeTmab95FCaMPCfqGWJOi9nvEVXx7clhhKOLFl-tYoZ21RjgGW8zysyfbK50WYzX_V9BeglI_bLVEQRUBqQb4BWfP8mjy0uAAAAAU7cV7YA")
+STRING2 = getenv("STRING_SESSION2", "AQB_u1cMpmSgjzNbqmFlCvKt2bG_PKSWQOnlH1jvQjb2yca9gIrjfvUBdACFwWnyweildw1B5CiOasc1LxUZ2fasjQzLiBqHsDfAuqPQGeHUhy7gmWZy5cY4Qaei40H5exAllqGhkyqNkrYEv_TS-ZJDkcIoxhCQJymTcjZtDiW0PLV0dW1SJK0_gGYe6PD_03vBIbTTcMeGYB3dN9I2pvqYiqMTXki4rD5u62KbCx0jnM7En0hom0AY2pIOOB4SDTx4lMQrJwy7prTnY0tHHDKd1Gf_bWNDE5nHv7QFr49LDLiCXtqsSF_De-JIYt7fcsIxApkVWf2FOSJ_2neOzjeUAAAAAXJA6jAA")
 
 STRING3 = getenv("STRING_SESSION3", None)
 
