@@ -19,7 +19,7 @@ async def play_logs(message, streamtype):
         else:
             chatusername = "Private Group"
         logger_text = f"""
-**Miss LOG**
+**Google Log**
 
 **Grup:** {message.chat.title} [`{message.chat.id}`]
 
