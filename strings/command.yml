@@ -13,7 +13,7 @@
 # Bot Commands
 PING_COMMAND : ["ping"]
 START_COMMAND : ["start"]
-HELP_COMMAND : ["yardim"]
+HELP_COMMAND : ["yardım"]
 SETTINGS_COMMAND : ["settings", "ayarlar"]
 RELOAD_COMMAND : ["admincache", "reload"]
 GSTATS_COMMAND : ["gstats"]
@@ -33,7 +33,7 @@ DELETEPLAYLIST_COMMAND : ["listemitemizle"]
 
 # Tools
 QUEUE_COMMAND : ["sira","ksira", "player", "cplayer", "playing", "kplaying"]
-SONG_COMMAND : ["indir", "video"]
+SONG_COMMAND : ["indirrr", "video"]
 BUL_COMMAND : ["bulllll"]
 LYRICS_COMMAND : ["söz"]
 
