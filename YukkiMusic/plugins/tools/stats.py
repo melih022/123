@@ -19,7 +19,6 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from YukkiMusic.misc import SUDOERS
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
 from YukkiMusic import YouTube, app
@@ -46,7 +45,12 @@ GSTATS_COMMAND = get_command("GSTATS_COMMAND")
 STATS_COMMAND = get_command("STATS_COMMAND")
 
 
-@app.on_message(filters.command(STATS_COMMAND) & SUDOERS)
+@app.on_message(
+    filters.command(STATS_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(
@@ -59,7 +63,12 @@ async def stats_global(client, message: Message, _):
     )
 
 
-@app.on_message(filters.command(GSTATS_COMMAND) & SUDOERS)
+@app.on_message(
+    filters.command(GSTATS_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def gstats_global(client, message: Message, _):
     mystic = await message.reply_text(_["gstats_1"])
@@ -106,7 +115,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"En Çok Oynanan Parça {MUSIC_BOT_NAME}\n\n**Başlık:** {title}\n\noynandı** {co} **zamanlar"
+    final = f"Top Most Played Track on {MUSIC_BOT_NAME}\n\n**Title:** {title}\n\nPlayed** {co} **times"
     upl = get_stats_markup(
         _, True if message.from_user.id in SUDOERS else False
     )
@@ -275,20 +284,20 @@ async def overall_stats(client, CallbackQuery, _):
     text = f"""**Bot's Stats and Information:**
 
 **Imported Modules:** {mod}
-**Hizmet Verilen Sohbetler:** {served_chats} 
-**Hizmet Verilen Kullanıcılar:** {served_users} 
-**Engellenmiş kullanıcılar:** {blocked} 
-**Sudo Kullanıcıları:** {sudoers} 
+**Served Chats:** {served_chats} 
+**Served Users:** {served_users} 
+**Blocked Users:** {blocked} 
+**Sudo Users:** {sudoers} 
     
-**Toplam Sorgu:** {total_queries} 
-**Toplam Asistan:** {assistant}
-**Otomatik Ayrılma Yardımcısı:** {ass}
-**Temiz mod süresi:** {cm} Mins
+**Total Queries:** {total_queries} 
+**Total Assistants:** {assistant}
+**Auto Leaving Assistant:** {ass}
+**Cleanmode duration:** {cm} Mins
 
-**Oynatma Süresi Sınırı:** {play_duration} Mins
-**Şarkı İndirme Sınırı:** {song} Mins
-**Bot'un Sunucu Oynatma Listesi Sınırı:** {playlist_limit}
-**Oynatma Listesi Oynatma Sınırı:** {fetch_playlist}"""
+**Play Duration Limit:** {play_duration} Mins
+**Song Download Limit:** {song} Mins
+**Bot's Server Playlist Limit:** {playlist_limit}
+**Playlist Play Limit:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(
@@ -357,24 +366,35 @@ async def overall_stats(client, CallbackQuery, _):
     total_queries = await get_queries()
     blocked = len(BANNED_USERS)
     sudoers = len(await get_sudoers())
-    text = f""" **Bot'un İstatistikleri ve Bilgileri:**
+    text = f""" **Bot's Stats and Information:**
 
-**Kullanılabilir Depolama :** {total[:4]} GiB
-**Kullanılan Depolama:** {used[:4]} GiB
-**Depolama Solu:** {free[:4]} GiB
+**Imported Modules:** {mod}
+**Platform:** {sc}
+**Ram:** {ram}
+**Physical Cores:** {p_core}
+**Total Cores:** {t_core}
+**Cpu Frequency:** {cpu_freq}
 
-**Hizmet Verilen Sohbetler:** {served_chats} 
-**Hizmet Verilen Kullanıcılar:** {served_users} 
-**Engellenmiş kullanıcılar:** {blocked} 
-**Sudo Kullanıcıları:** {sudoers} 
+**Python Version :** {pyver.split()[0]}
+**Pyrogram Version :** {pyrover}
+**Py-TgCalls Version :** {pytgver}
 
-**Mongo Çalışma Süresi:** {mongouptime[:4]} Days
-**Toplam Veritabanı Boyutu:** {datasize[:6]} Mb
-**Toplam Veritabanı Depolama Alanı:** {storage} Mb
-**Toplam Veritabanı Koleksiyonu:** {collections}
-**Toplam Veritabanı Anahtarları:** {objects}
-**Toplam Veritabanı Sorgusu:** `{query}`
-**Toplam Bot Sorgusu:** `{total_queries} `
+**Storage Avail:** {total[:4]} GiB
+**Storage Used:** {used[:4]} GiB
+**Storage Left:** {free[:4]} GiB
+
+**Served Chats:** {served_chats} 
+**Served Users:** {served_users} 
+**Blocked Users:** {blocked} 
+**Sudo Users:** {sudoers} 
+
+**Mongo Uptime:** {mongouptime[:4]} Days
+**Total DB Size:** {datasize[:6]} Mb
+**Total DB Storage:** {storage} Mb
+**Total DB Collections:** {collections}
+**Total DB Keys:** {objects}
+**Total DB Queries:** `{query}`
+**Total Bot Queries:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
