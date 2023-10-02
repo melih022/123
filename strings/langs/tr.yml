@@ -111,20 +111,27 @@ set_cb_7 : "Yetkili Kullanıcı Listesi Alınıyor.. LÜTFEN BEKLEYİNİZ."
 set_cb_8 : "Geri alma.."
 
 # Misc
-gstats_1 : "Global İstatistikleri Alma, Bu Biraz Zaman Alabilir..."
-gstats_2 : "Global İstatistik Bulunamadı."
-gstats_3 : "Botta Global İlk 10'u {0} grup alınıyor.bu biraz zaman alabilir."
-gstats_4 : "**Bot'taki Toplam Sorgu:** {0}\n\n{1}, şu ana kadar **{2}** parça çalmış ve **{3}** gibi çok sayıda parça çalmıştır.\n\n**En İyi {4} Parçalar:**\n"
+ustats_1 : "No User Stats Found."
+ustats_2 : "Greetings!, You have played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by you:\n\n"
+
+gstats_1 : "Getting Global Stats, This could take some time..."
+gstats_2 : "No Stats Found."
+gstats_3 : "Getting Global Top 10 {0} on the bot, This could take some time.."
+gstats_4 : "**Total Queries on Bot:** {0}\n\n{1} has played **{2}** tracks till now with a whopping count of **{3}** times.\n\n**Top {4} Tracks:**\n"
 gstats_5 : "**Top {0} Chats of {1}:**\n\n"
 gstats_6 : "**Top {0} Users of {1}:**\n\n"
-gstats_7 : "Bu sohbet grubu, şu ana kadar **{1}** defadan fazla sayıda **{0}** parça çaldı.\n\nBu sohbet grubu tarafından en çok çalınan {2} parça:\n\n"
-gstats_8 : "Bot'un genel istatistiklerini ve bilgilerini almak.. Bu biraz zaman alabilir..."
-gstats_9 : "**BOT'UN KÜRESEL İSTATİSTİKLERİ**\n\nBot sunucularından genel istatistikleri kontrol etmek istediğiniz düğmeleri aşağıdan seçin."
-gstats_10 : "**{0}**\n\nGlobal İstatistikleri Bot sunucularından global istatistikleri kontrol etmek istediğiniz düğmeleri aşağıdan seçin."
-gstats_11 : "**{0}**\nGenel İstatistikleri Bot sunucularından genel istatistikleri kontrol etmek istediğiniz düğmeleri aşağıdan seçin.\n\nEn iyi parçaları, sohbetleri, kullanıcıları ve diğer öğeleri kontrol etmek için lütfen /gstats 'ı kullanın."
+gstats_7 : "This chat group has played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by this chat group:\n\n"
+gstats_8 : "Getting Bot's general stats and information.. This could take some time..."
+gstats_9 : "**GLOBAL TOP 10 STATS OF THE BOT**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
+gstats_10 : "**Global Stats of {0}**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
+gstats_11 : "**General Stats of {0}**\nSelect the buttons from below for which you want to check global stats from bot's servers.\n\nTo check top tracks, chats, users and other stuffs, please use /gstats"
 
-ustats_1 : "Kullanıcı İstatistikleri Bulunamadı."
-ustats_2 : "Selamlar!, Şimdiye kadar çok sayıda **{1}** kez **{0}** parça çaldınız.\n\nEn çok {2} çaldığınız parça:\n\n"
+
+# Play 
+
+#Play Callback 
+playcb_1 : "This is not for you! Search You Own Song."
+playcb_2 : "Getting Next Result"
 
 tops_1 : "Botun Global İlk 10 Sohbetini Alma, Bu biraz zaman alabilir..."
 tops_2 : "İstatistik Bulunamadı"
