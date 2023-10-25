@@ -46,13 +46,13 @@ class YukkiBot(Client):
                 await self.set_bot_commands(
                     [
                         BotCommand("ping", "Check that bot is alive or dead"),
-                        BotCommand("oynat", "Starts playing the requested song"),
-                        BotCommand("atla", "Moves to the next track in queue"),
-                        BotCommand("durdur", "Pause the current playing song"),
-                        BotCommand("devam", "Resume the paused song"),
-                        BotCommand("son", "Clear the queue and leave voice chat"),
-                        BotCommand("karistir", "Randomly shuffles the queued playlist."),
-                        BotCommand("oynatmodu", "Allows you to change the default playmode for your chat"),
+                        BotCommand("play", "Starts playing the requested song"),
+                        BotCommand("skip", "Moves to the next track in queue"),
+                        BotCommand("pause", "Pause the current playing song"),
+                        BotCommand("resume", "Resume the paused song"),
+                        BotCommand("end", "Clear the queue and leave voice chat"),
+                        BotCommand("shuffle", "Randomly shuffles the queued playlist."),
+                        BotCommand("playmode", "Allows you to change the default playmode for your chat"),
                         BotCommand("settings", "Open the settings of the music bot for your chat.")
                         ]
                     )
