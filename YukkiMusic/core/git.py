@@ -7,7 +7,7 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-from modules import config
+import config
 
 from ..logging import LOGGER
 
