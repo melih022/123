@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
 
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
@@ -15,18 +7,18 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://videomuzik2:112233mmm@cluster0.h9kcxjm.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://melih:canmelih@melih.zdnmebb.mongodb.net/?retryWrites=true&w=majority&appName=Melih"
 
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "MONGO DB URL'si bulunamadı. Botunuz Mis'in Veritabanında çalışacak"
+        "No MONGO DB URL found.. Your Bot will work on Yukki's Database"
     )
     temp_client = Client(
-        "Yukki",
-        bot_token=config.BOT_TOKEN,
+        name="Yukki",
         api_id=config.API_ID,
         api_hash=config.API_HASH,
+        bot_token=config.BOT_TOKEN,
     )
     temp_client.start()
     info = temp_client.get_me()
@@ -39,5 +31,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Yukki
-    pymongodb = _mongo_sync_.Yukki
+    mongodb = _mongo_async_.Kaal
+    pymongodb = _mongo_sync_.Kaal
