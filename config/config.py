@@ -28,17 +28,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = getenv("API_ID", "26737753")
+API_ID = getenv("API_ID", "28167888")
 
-API_HASH = getenv("API_HASH", "2722752e7b4474a6bced30ead5dafe17")
+API_HASH = getenv("API_HASH", "d27cbb6932219fcf1bfd6137485c5bac")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6188130506:AAF_YV9Aa2ErP6pPNHlypaSsmKthluBZ8BQ")
+BOT_TOKEN = getenv("BOT_TOKEN", "6188130506:AAGieqMNYDVBtsMdCI9GhEsWwGSplthmjVs")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://deep:melih@deep.dyieaos.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://melih:canmelih@melih.zdnmebb.mongodb.net/?retryWrites=true&w=majority&appName=Melih")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 
@@ -194,13 +194,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION1", "BAA6S1UJsPKECxN97uJecHktt7gyzlUV8-LfRM2G5gGFunVbIUnECyjxPsifkKAmM6yhr89zqdlOngXXIMAwJ4HmT9xPox1ZThOA1IQc7UC9JXIG05fXPYPyWM9kOYlfltkUdkSgu55fHPUxIP-bHr3yx8mwYyByapxUR4O5St38J0SoA61eqql-xEDa8Hm2ESTq0QCXxCBu-82NetCfOiKvajIBXJbL87-nEAbtX5m9UVu9A8m-Ltys57EwlmxKtgnLdmquBbZhHGh10Hr-AlRY57ZxXgZHAWg9USf5O2YwBNBop78l4OVpHw7Y--mGkUGX5DUGcs2OnNYI2j5bR1DBAAAAAXunZtEA") #+905517335179
+STRING1 = getenv("STRING_SESSION", "BAGtztAAj3CVD215wbMRlea7VG6NAHaZ8HRk-_nkhBmFZQXflpnCgubwENzDS2HaUSCqz37Qx097rh7YC6fvgGyTGDmqxSihqzH2NCpmAzsKl4prK7xgnC6y0rvGOBJcbigqvzIe8uK28cmlgh3ViLoqwOKkdVHArRHZRnDVim4CGzfwAgxIrfJlh-vOQ9q8QkYSjCFI_dY0XhSAkCjJde3maIYAKmfDk_YZQ6CYJ8uX8wbRMuYmO4IW6_f9dEiKxyFT621nTdojaGNk8Y3PcoUiMHoFdLQcHBOjJ6O7H99w1j9MF0rf2oLoVd8gPcW9CJkoqRkZU3ZgftzBn8oi5dlQrPv92QAAAAF7p2bRAA")
 STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", "BAAu4C3LSxvUP-N7u_F4xtbPowD-oeYplLm6bkN-ps_vdPKqiQyx-OTrt1_hDMitnLuMoIqBGHlSS-E_hEsORongAfc5SIs843vsDocck9pzVaHB4YU2QfL9rx1f9uXryTOdugQ8Qefp8okoQzFg5qS_vQ87AWEs64Bo7YEDM2lFLPBcUYYnDfoDAJoppVBrLKsU40UuA4Wx1KDKXdf1wCmy5LP41bGiwfNWJjRNaSGKYEfhqp0GDbp2Gxm1p6GidHOtGEE-KLrIwIZFaGbNfAoUSCcKI3nn-f-wfy1IFgi6cYbFlbOGmPAwvKwxGRkJE4vvahUVX6szdZbzL4Pr4Sk4AAAAAU7cV7YA") #+33688529782
-
-STRING4 = getenv("STRING_SESSION4", "AgCqRce9QUVaRAcvl2xN6IWnoDNA_MRG5yba27m-goYhLXgtjBsbCaKSuUcBBSAk8jYPlOhYd6pJelV6JTdcDL6VY8raHMFExJFsm9Uq8UbELMiDnsvc6hBDZq1psFRUifwHAtuXsWiDaxkk0WJItX7vWlULJNvwJ5K3B1ZneYJaAogQphtO2otPWhtgiwbJ_0tGT7n2kODkHc6Ldn93fKUALTSKekMRTiSX8zlKYbhJLIlF0gdudWkGpjlzjcXPgViAlo89MFHM4ZGso0ItQEwDwcNtK_CHWLZm9IAyrl98tTWMdIcAq1awzYM3xwek20dE34uacK3xMmTX6g0bJJupAAAAAG5PILwA") #+79878709074
-
-STRING5 = getenv("STRING_SESSION5", "AgBgyEq1Syk9aL8cRrJQBqGhWplA3PtiubczcO7ccpu9WKdpwOKaW-DC5GIKrK-ZYNxzpykfKZ74v1uCSux5jLTIB5QMh7VrofBIqyuRlWTlzrw_3IPfNji2f2hdSZnlIn1decgkwKTnn99qoZApK8zaStDFl5gs-AaSwsJoczGXFnaS1_OlCyJSrrvS2uOashcslycnSv8MwHMF1OSO5hbyhouSdfY-DpjFrM8JV8QXBNXCLS4OHtWVKPWnU2hDbsfX2CGb8-0k-o70kWYJBmcpuaMTkTxna0vqW4KSnqsqpAyMeygbROcT8RsBphGBktjFM1gDA1ohOBnD1rMiHUiyAAAAAWzEX4oA") # +380665874155
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
 
 #  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
 
