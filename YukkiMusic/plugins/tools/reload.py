@@ -30,7 +30,7 @@ CKOMUTLAR_COMMAND = get_command("CKOMUTLAR_COMMAND")
 @app.on_message(
     filters.command(RELOAD_COMMAND)
     & filters.group
-    & ~filters.edited
+   # & ~filters.edited
     & ~BANNED_USERS
 )
 @language
@@ -58,7 +58,7 @@ async def reload_admin_cache(client, message: Message, _):
 @app.on_message(
     filters.command(RESTART_COMMAND)
     & filters.group
-    & ~filters.edited
+  #  & ~filters.edited
     & ~BANNED_USERS
 )
 @AdminActual
@@ -146,7 +146,7 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
 @app.on_message(
     filters.command(KOMUTLAR_COMMAND)
     & filters.group
-    & ~filters.edited
+    #& ~filters.edited
     & ~BANNED_USERS
 )    
 async def mesaj(client, message: Message):
@@ -156,7 +156,7 @@ async def mesaj(client, message: Message):
 @app.on_message(
     filters.command(CKOMUTLAR_COMMAND)
     & filters.group
-    & ~filters.edited
+   # & ~filters.edited
     & ~BANNED_USERS
 )    
 async def mesaj(client, message: Message):
