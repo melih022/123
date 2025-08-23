@@ -11,7 +11,7 @@ lyricsgenius
 motor
 pillow==9.5.0
 psutil
-py-tgcalls
+git+https://github.com/pytgcalls/py-tgcalls.git@dev
 pykeyboard
 pyrogram==2.0.106
 python-dotenv
@@ -23,4 +23,4 @@ tgcrypto
 youtube-search
 youtube-search-python
 yt-dlp
-ntgcalls
+git+https://github.com/pytgcalls/ntgcalls.git@dev
