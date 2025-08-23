@@ -28,13 +28,13 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = getenv("API_ID", "28167888")
+API_ID = getenv("API_ID", "27992427")
 
-API_HASH = getenv("API_HASH", "d27cbb6932219fcf1bfd6137485c5bac")
+API_HASH = getenv("API_HASH", "07342c40853340995a492d0fc2de96cf")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6188130506:AAGieqMNYDVBtsMdCI9GhEsWwGSplthmjVs")
+BOT_TOKEN = getenv("BOT_TOKEN", "8354956794:AAFp8D-53Z-7HYtd3874l6CP5KCuvKAFcQ4")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 
@@ -58,11 +58,11 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002096066017"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002663919856"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "GoogleMuziksbot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Tgdenembot")
 
 # Your User ID.
 
@@ -194,7 +194,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "BAGtztAAj3CVD215wbMRlea7VG6NAHaZ8HRk-_nkhBmFZQXflpnCgubwENzDS2HaUSCqz37Qx097rh7YC6fvgGyTGDmqxSihqzH2NCpmAzsKl4prK7xgnC6y0rvGOBJcbigqvzIe8uK28cmlgh3ViLoqwOKkdVHArRHZRnDVim4CGzfwAgxIrfJlh-vOQ9q8QkYSjCFI_dY0XhSAkCjJde3maIYAKmfDk_YZQ6CYJ8uX8wbRMuYmO4IW6_f9dEiKxyFT621nTdojaGNk8Y3PcoUiMHoFdLQcHBOjJ6O7H99w1j9MF0rf2oLoVd8gPcW9CJkoqRkZU3ZgftzBn8oi5dlQrPv92QAAAAF7p2bRAA")
+STRING1 = getenv("STRING_SESSION", "BAGrIWsAKDxd8wJerLB6n-rWEVe7nRtr99IhQShT7eext0EW4jQ9os-KStg5IrtWehwIA1TqkoYljqT2-PPlkHTb6MSnmM1Wf2VxwD4PINiL4cDvAVK2wj4qgsdOD0kbJy7lOsq9Ta0FteNsNM3QD5knOZ2L1PHuYyv9FQmIzEU7J5bxt2HmSS36GOkI6v4R9G8CmGITt21t5rVxzb5rnUtzTjJBACzFEdcQhixMy6qlKZCPw9CYUQXe2WhPJe4DbxZoq289mQEZstGRTiplMJtiRSfy3fEld7i3L6yPtpNwZ2L7_ptXO2BiSoEHORcnX_Sr73o3aUXzHXsb454PHyqZmMwNigAAAAGyKBFGAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
