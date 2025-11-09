@@ -23,3 +23,5 @@ youtube-search
 youtube-search-python
 yt-dlp
 pytgcalls
+py-tgcalls==2.2.9
+ntgcalls>=2.0.7,<3.0.0
