@@ -34,7 +34,7 @@ API_HASH = getenv("API_HASH", "07342c40853340995a492d0fc2de96cf")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "8354956794:AAFp8D-53Z-7HYtd3874l6CP5KCuvKAFcQ4")
+BOT_TOKEN = getenv("BOT_TOKEN", "8535796087:AAHognp7igwYvPsQPUoXsEEYY2E0u9qOfE8")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 
@@ -62,13 +62,13 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002663919856"))
 
 # A name for your Music bot.
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Tgdenembot")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Denemedeepbot")
 
 # Your User ID.
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5009212526").split())
+    map(int, getenv("OWNER_ID", "7035704703").split())
 
 )  # Input type must be interger
 
